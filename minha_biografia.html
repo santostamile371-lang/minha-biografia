@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <title>Minha Biografia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background-color: #FFF0F5;
+    color: #5C4033;
+    font-family: Georgia;
+    margin: 30px;
+    line-height: 1.8;
+    h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #C06080;
+   
+}
+img {
+    border: 3px solid #D8A7B1;
+    border-radius: 10px;
+}
+.envelope {
+    background-color: #F8D7E3;
+    border: 2px solid #D8A7B1;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 15px #FFB6C1, 0 0 30px #FF69B4;
+    animation: brilho 2s infinite alternate;
+}
+.envelope::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle, white 1px, transparent 2px),
+        radial-gradient(circle, #FF69B4 1px, transparent 2px),
+        radial-gradient(circle, #FFD700 1px, transparent 2px);
+
+    background-size: 30px 30px, 45px 45px, 60px 60px;
+    animation: glitter 3s infinite;
+    opacity: 0.7;
+}
+p {
+    margin-bottom: 15px;
+}
+#biografia {
+    background-color: #FFF8FA;
+    border: 2px solid #D8A7B1;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+}
+@keyframes brilho {
+    from {
+        box-shadow: 0 0 10px #FFB6C1;
+    }
+    to {
+        box-shadow: 0 0 30px #FF69B4, 0 0 50px #FFD700;
+    }
+}
+
+@keyframes glitter {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+.envelope {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+
+</head>
+<body>
+ <div class="envelope" onclick="document.getElementById('biografia').style.display='block'; this.style.display='none';" style="cursor: pointer;">
+    <h2>Uma carta para você 💌</h2>
+    <p>Com carinho, Tami 💗</p>
+    <p>Clique para abrir</p>
+</div>
+
+<div id="biografia" style="display: none;">
+
+    <h1>Minha Biografia</h1>
+
+    <img src="Essa_sou_eu.jpg" width="200">
+
+    <p>Meu nome é Tamile Santos Almeida, sou formada em Tecnologia da Informação e faço Graduação em Administração.</p>
+
+    <p>Tenho 20 anos.</p>
+
+    <p>Nasci no dia 28, na cidade de Itaeté-Bahia, no ano de 2006, em um domingo.</p>
+
+    <p>Trabalho no Hospital Especializado Lopes Rodrigues, e faço faculdade de forma híbrida.</p>
+
+    <p>Sou uma pessoa dedicada, sonhadora e que busca crescer cada vez mais, tanto pessoalmente quanto profissionalmente.</p>
+
+    <p>Tenho muitos sonhos e objetivos. Quero construir uma carreira de sucesso, conquistar minha independência e continuar evoluindo como pessoa.</p>
+
+    <p>Se você está lendo esta carta, espero que consiga conhecer um pouco mais sobre quem sou, minhas histórias, meus sonhos e tudo aquilo que me torna única.</p>
+
+    <p>Tenho algumas qualidades como:</p>
+
+    <ol>
+        <li>Proatividade</li>
+        <li>Divertida</li>
+        <li>Honesta</li>
+        <li>Leal</li>
+    </ol>
+
+    <p>Com carinho,</p>
+    <p>Tami 💗</p>
+
+</div>
+
+<script>
+function abrirCarta() {
+    document.getElementById("biografia").style.display = "block";
+}
+</script>
+
+</body>
+</body>
+<script>
+function abrirCarta() {
+    document.getElementById("carta").style.display = "block";
+}
+</script>
+</html>
